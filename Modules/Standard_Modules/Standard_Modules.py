@@ -1,3 +1,5 @@
+# Thực hiện các câu lệnh ở chế độ tương tác
+
 # import sys
 
 # print(sys.ps1)
