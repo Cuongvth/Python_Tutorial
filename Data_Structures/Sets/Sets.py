@@ -5,21 +5,21 @@ print(basket)
 
 print(
     "orange" in basket
-)  # In ra giá trị đúng hoặc sai biểu diễn cho sự tồn tại của đối tượng chỉ định
+)  # Lấy ra giá trị đúng hoặc sai biểu diễn cho sự tồn tại của phần tử chỉ định trong bộ
 # True
 
 print(
     "crabgrass" in basket
-)  # In ra giá trị đúng hoặc sai biểu diễn cho sự tồn tại của đối tượng chỉ định
+)  # Lấy ra giá trị đúng hoặc sai biểu diễn cho sự tồn tại của phần tử chỉ định trong bộ
 # False
 
 a = set(
     "abracadabra"
-)  # Tạo đối tượng a với các phần tử là các kí tự có trong chuỗi chỉ định không có các kí tự lặp lại
+)  # Tạo bộ a với các phần tử là các kí tự có trong chuỗi chỉ định không có các kí tự lặp lại
 
 b = set(
     "alacazam"
-)  # Tạo đối tượng b với các phần tử là các kí tự có trong chuỗi chỉ định không có các kí tự lặp lại
+)  # Tạo bộ b với các phần tử là các kí tự có trong chuỗi chỉ định không có các kí tự lặp lại
 
 print(a)
 # {"a", "r", "b", "c", "d"}
@@ -33,7 +33,5 @@ print(a | b)  # Phàn tử tồn tại trong a hoặc trong b
 print(a & b)  # Phần tử tồn tại ở trong cả a và b
 # {"a", "c"}
 
-print(
-    a ^ b
-)  # Phần tử tồn tại ở trong a hoặc b nhưng không tồn tại trong đối tượng còn lại
+print(a ^ b)  # Phần tử tồn tại ở trong a hoặc b nhưng không tồn tại trong bộ còn lại
 # {"r", "d", "b", "m", "z", "l"}

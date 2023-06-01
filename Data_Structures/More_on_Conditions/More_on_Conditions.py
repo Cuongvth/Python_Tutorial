@@ -6,6 +6,6 @@ string1, string2, string3 = (
 
 non_null = (
     string1 or string2 or string3
-)  # Khởi tạo đối tượng non_null co giá trị là phần tử đầu tiên có giá trị trong ba phần tử string1, string2, string3
+)  # Khởi tạo đối tượng non_null có giá trị là phần tử đầu tiên có giá trị trong ba phần tử string1, string2, string3
 
 print(non_null)

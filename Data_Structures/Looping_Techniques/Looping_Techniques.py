@@ -2,7 +2,7 @@ knights = {"gallahad": "the pure", "robin": "the brave"}
 
 for k, v in knights.items():
     print(k, v)
-# Lặp qua tất cả các phần tử trong đối tượng knights và lấy ra key cùng giá trị của nó
+# Lặp qua tất cả các phần tử trong từ điển knights và lấy ra khóa cùng giá trị của nó
 # Output:
 # gallahad the pure
 # robin the brave
@@ -15,11 +15,11 @@ for i, v in enumerate(["tic", "tac", "toe"]):
 # 1 tac
 # 2 toe
 
-questions = ["name", "quest", "favorite color"]  # Khởi tại đối tượng questions
-answers = ["lancelot", "the holy grail", "blue"]  # Khỏi tạo đối tương answers
+questions = ["name", "quest", "favorite color"]  # Khởi tại mảng questions
+answers = ["lancelot", "the holy grail", "blue"]  # Khỏi tạo mảng answers
 for q, a in zip(questions, answers):
     print("What is your {0}?  It is {1}.".format(q, a))
-# Lặp qua tất cả các phần tử trong đối tượng questions và answers lấy ra các phần tử trong hai đối tượng
+# Lặp qua tất cả các phần tử trong mảng questions và answers lấy ra các phần tử trong hai mảng
 # Output:
 # What is your name?  It is lancelot.
 # What is your quest?  It is the holy grail.
