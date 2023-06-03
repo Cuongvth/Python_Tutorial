@@ -1,3 +1,10 @@
+import os
+import sys
+
+sys.path.append(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+)
+
 from B import B
 from C import C
 from D import D
@@ -32,7 +39,6 @@ except Exception as inst:  # Lấy ra ngoại lệ dưới đối tượng inst
     print("x =", x)
     print("y =", y)
 
-import sys
 
 try:
     f = open(path + "Errors_and_Exceptions\Handling_Exceptions\myfile.txt")

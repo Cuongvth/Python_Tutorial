@@ -1,3 +1,10 @@
+import os
+import sys
+
+sys.path.append(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+)
+
 from Config.Config import path
 
 with open(path + "Errors_and_Exceptions\Predefined_Clean_up_Actions\myfile.txt") as f:
