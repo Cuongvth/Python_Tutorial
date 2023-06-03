@@ -1,1 +1,1 @@
-path = "W:\Python\\"
+path = "W:\Git\Python_Tutorial\\"
