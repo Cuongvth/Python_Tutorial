@@ -1,4 +1,4 @@
-import fibo, sys, builtins
+import Modules.fibo as fibo, sys, builtins
 
 print(dir(fibo))
 # ['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'a', 'fib', 'fib2']

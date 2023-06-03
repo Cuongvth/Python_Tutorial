@@ -1,7 +1,7 @@
 from B import B
 from C import C
 from D import D
-
+from Config.Config import path
 
 while True:  # Lặp lại liên tục
     try:
@@ -35,9 +35,7 @@ except Exception as inst:  # Lấy ra ngoại lệ dưới đối tượng inst
 import sys
 
 try:
-    f = open(
-        "W:\Git\Python_Tutorial\Errors_and_Exceptions\Handling_Exceptions\myfile.txt"
-    )
+    f = open(path + "Errors_and_Exceptions\Handling_Exceptions\myfile.txt")
     s = f.readline()
     i = int(s.strip())
     print(i)
@@ -48,7 +46,6 @@ except ValueError:
 except Exception as err:
     print(f"Unexpected {err=}, {type(err)=}")
     raise
-
 
 # Mở chế độ tương tác và chạy file với đối số là myfile.txt
 # Output:

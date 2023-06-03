@@ -1,6 +1,6 @@
-with open(
-    "W:\Git\Python_Tutorial\Errors_and_Exceptions\Predefined_Clean_up_Actions\myfile.txt"
-) as f:
+from Config.Config import path
+
+with open(path + "Errors_and_Exceptions\Predefined_Clean_up_Actions\myfile.txt") as f:
     for line in f:
         print(line, end="")
 
