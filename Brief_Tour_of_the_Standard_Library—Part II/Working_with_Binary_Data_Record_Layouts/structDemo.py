@@ -7,7 +7,6 @@ def Demo():
         "rb",
     ) as f:
         data = f.read(16)  # Đọc 16 bytes từ file
-    print(len(data))
     fields = struct.unpack(
         "<IIIHH", data[:16]
     )  # unpack với kiểu <IIIHH cho kiểu 16 bytes
