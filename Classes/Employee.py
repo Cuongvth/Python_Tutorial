@@ -35,10 +35,10 @@ class Employee:
         print("Tuổi:", self.tuoi)
         print("Lương:", self.luong)
         print("Thời gian làm việc:", self.thoiGianLamViec)
-        print("Tổng lương:", self.tinhTongLuong())
+        print("Tổng lương:", self.__tinhTongLuong())
         print("--------------------------------")
 
-    def tinhTongLuong(self):
+    def __tinhTongLuong(self):
         return self.thoiGianLamViec * self.luong
 
     def toJson(self):

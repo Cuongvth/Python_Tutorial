@@ -41,10 +41,10 @@ class Manager(Employee):
         print("Lương:", self.luong)
         print("Thời gian làm việc:", self.thoiGianLamViec)
         print("Thưởng:", self.thuong)
-        print("Tổng lương:", self.tinhTongLuong())
+        print("Tổng lương:", self.__tinhTongLuong())
         print("--------------------------------")
 
-    def tinhTongLuong(self):
+    def __tinhTongLuong(self):
         return self.thoiGianLamViec * self.luong + self.thuong
 
     def toJson(self):
