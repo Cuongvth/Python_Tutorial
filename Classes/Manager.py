@@ -36,16 +36,23 @@ class Manager(Employee):
 
     def Show(self):
         print("--------------------------------")
-        print("Tên:", self.ten)
-        print("Tuổi:", self.tuoi)
-        print("Lương:", self.luong)
-        print("Thời gian làm việc:", self.thoiGianLamViec)
-        print("Thưởng:", self.thuong)
-        print("Tổng lương:", self.__tinhTongLuong())
+        print("-Tên:", self.ten)
+        print("-Tuổi:", self.tuoi)
+        print("-Lương:", self.luong)
+        print("-Thời gian làm việc:", self.thoiGianLamViec)
+        print("-Thưởng:", self.thuong)
+        print("-Tổng lương:", self.__tinhTongLuong())
+        print("-Hiện đang quản lí các nhân viên:")
+        for i in self.__return_lstNhanVien():
+            i.Show()
+        print("-Tổng lương nhân viên:", self.__tinhTongLuongNhanVien())
         print("--------------------------------")
 
     def __tinhTongLuong(self):
         return self.thoiGianLamViec * self.luong + self.thuong
+
+    def __tinhTongLuongNhanVien(self):
+        return sum(i._Employee__tinhTongLuong() for i in self.lstNhanVien)
 
     def toJson(self):
         return {
@@ -67,3 +74,7 @@ class Manager(Employee):
             [Employee.jsonToObject(i) for i in data["lstNhanVien"]],
             data["thuong"],
         )
+
+    def __return_lstNhanVien(self):
+        for i in self.lstNhanVien:
+            yield i

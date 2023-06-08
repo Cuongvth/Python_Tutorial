@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "ten": "1",
+    "tuoi": 1,
+    "luong": 1,
+    "thoiGianLamViec": 1,
+    "lstNhanVien": [
+      { "ten": "1", "tuoi": 1, "luong": 1, "thoiGianLamViec": 1 }
+    ],
+    "thuong": 1
+  },
+  {
+    "ten": "1",
+    "tuoi": 1,
+    "luong": 1,
+    "thoiGianLamViec": 1,
+    "lstNhanVien": [
+      { "ten": "1", "tuoi": 1, "luong": 1, "thoiGianLamViec": 1 },
+      { "ten": "1", "tuoi": 1, "luong": 1, "thoiGianLamViec": 1 },
+      { "ten": "1", "tuoi": 1, "luong": 1, "thoiGianLamViec": 1 }
+    ],
+    "thuong": 1
+  },
+  {
+    "ten": "1",
+    "tuoi": 1,
+    "luong": 1,
+    "thoiGianLamViec": 1,
+    "lstNhanVien": [
+      { "ten": "1", "tuoi": 1, "luong": 1, "thoiGianLamViec": 1 }
+    ],
+    "thuong": 1
+  }
+]
