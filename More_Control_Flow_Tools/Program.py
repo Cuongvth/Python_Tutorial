@@ -10,6 +10,7 @@ import Special_parameters
 import Unpacking_Argument_Lists
 import Lambda_Expressions
 import Documentation_Strings
+import Function_Annotations
 
 
 selection = "-1"
@@ -27,6 +28,7 @@ while selection != "0":
     print("10. Unpacking_Argument_Lists")
     print("11. Lambda_Expressions")
     print("12. Documentation_Strings")
+    print("13. Function_Annotations")
     print("0. Exit")
     print("----------------------------Menu----------------------------")
     selection = input("Enter selection: ")
@@ -54,6 +56,8 @@ while selection != "0":
         Lambda_Expressions.Demo()
     elif selection == "12":
         Documentation_Strings.Demo()
+    elif selection == "13":
+        Function_Annotations.Demo()
     elif selection == "0":
         exit()
     else:
